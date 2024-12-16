@@ -50,6 +50,10 @@ a:visited {
   color: rgb(37, 37, 37);
 }
 
+a {
+  color: rgb(37, 37, 37);
+}
+
 
 .active {
   background-color: rgb(49, 40, 40);
