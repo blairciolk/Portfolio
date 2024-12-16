@@ -1,0 +1,183 @@
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+  background: #808080;
+  background-repeat: repeat;
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+# {
+  margin: 0;
+}
+
+#navbar {
+  background-color: rgb(105, 105, 105);
+  padding: .4em;
+  overflow: hidden;
+  display: block;
+}
+
+.navbartext {
+  color: rgb(0, 0, 0);
+  padding: .5em;
+  font-size: larger;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page conent to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 30px;
+}
+
+a:visited {
+  color: rgb(37, 37, 37);
+}
+
+
+.active {
+  background-color: rgb(49, 40, 40);
+}
+
+
+.right {
+  text-align: right;
+
+}
+
+.left {
+  text-align: left;
+
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+/*
+  align-items: center;
+  align-self: center;
+*/
+}
+
+
+
+
+.centerimg, #selfport {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.warningicon {
+  width: 2%;
+}
+
+#deliverydriverpicture {
+  width: 25%;
+  margin-top: .8em;
+  border-radius: 10%;
+  border: 3px dashed rgb(61, 61, 61);
+}
+
+
+.snippetdescription1 {
+  margin-right: 0%;
+}
+
+#code2{
+   position:relative;
+   left:-58px;
+}
+
+#snowboarder {
+  margin: 1em;
+  width: 25%;
+  border-radius: 10%;
+  border: 3px dashed rgb(61, 61, 61);
+}
+
+#quizmaster {
+  margin-top: 1em;
+  width: 25%;
+  border-radius: 10%;
+  border: 3px dashed rgb(61, 61, 61);
+}
+
+
+
+
+pre {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+hr {
+  border: 1.5px dashed rgb(105, 105, 105);
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+#Certs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.heart {
+  width: 1em;
+}
+
+
+#profile{
+    padding-bottom: 0em;
+}
+
+#selfport {
+  width: 10%;
+  border-radius: 20%;
+  border: 3px dashed rgb(61, 61, 61);
+}
+
+#ContactMe{
+    padding-bottom: 2em;
+}
+
+#footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(82, 82, 82);
+  color: white;
+  text-align: center;
+  padding-bottom: 0;
+}
