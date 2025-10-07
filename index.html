@@ -70,47 +70,49 @@
 
 
     <!-- Delivery Driver Lab -->
-    <h3>Delivery Driver Lab</h3>
-    <p>The delivery driver lab consisted of creating a drivable car that picks up "deliveries" and required the player
-      to return the delivery to a specific area to score a point. <br> Although simple sounding, this game introduced
-      velocity, player controls, interacting with objects, and more new topics that would help in later game
-      development. <br>
-      <br>
-    <p>GitHub repo <a href="https://github.com/oaisd-ctc/deliverydriver-Blair-Ciolk-Student" target="_blank">here.</a>
-    </p>
-    <p>MacOS download <a href="unityBuilds/delivery_driver/delivery_driver_game.zip" download>here.</a></p>
-    <img src="images/games/deliverydriver/delliverydriverss.png"
-      alt="A yellow car on a road with a box and a red circle nearby with houses and trees" id="deliverydriverpicture"
-      class="centerimg">
-    </p>
-    <br>
-	<br>
-    <!-- Description of the snippet -->
-    <h4>Snippet Description</h4>
-    <p class="center snippetdescription1">The code snippet defines what should happen to the player when the player
-      interacts with an object with the script.
-      <br> This snippet is a part of a longer piece of code, but this small piece of code detects whether or not the
-      player has successfully returned a package.
-      <br>
-      <br>
-      If the tag of the object is "Customer" and the player has a package while driving over the delivery zone, <br> the
-      total delivered amount will update, the car will change colors, and the boolean "hasPackage" will become false,
-      <br> meaning the player can now retrieve another package.
-      <br>
-      <br>
-    </p>
-    <br>
-    <!-- Code Snippet From Delivery Driver Script -->
-    <div class="center" id="code1">
-      <pre>
-        if (other.tag == "Customer" && hasPackage == true) {
-      totalDelivered++;
-        Debug.Log($"You delivered: " + totalDelivered + " packages.");
-          packageObtained.text = $"Packages Delivered: " + totalDelivered;
-           spriteRenderer.color = noPackageColor;
-           hasPackage = false; }
-        </pre>
-    </div>
+	<div>
+		<h3>Delivery Driver Lab</h3>
+		<p>The delivery driver lab consisted of creating a drivable car that picks up "deliveries" and required the player
+		  to return the delivery to a specific area to score a point. <br> Although simple sounding, this game introduced
+		  velocity, player controls, interacting with objects, and more new topics that would help in later game
+		  development. <br>
+		  <br>
+		<p>GitHub repo <a href="https://github.com/oaisd-ctc/deliverydriver-Blair-Ciolk-Student" target="_blank">here.</a>
+		</p>
+		<p>MacOS download <a href="unityBuilds/delivery_driver/delivery_driver_game.zip" download>here.</a></p>
+		<img src="images/games/deliverydriver/delliverydriverss.png"
+		  alt="A yellow car on a road with a box and a red circle nearby with houses and trees" id="deliverydriverpicture"
+		  class="centerimg">
+		</p>
+		<br>
+		<br>
+		<!-- Description of the snippet -->
+		<h4>Snippet Description</h4>
+		<p class="center snippetdescription1">The code snippet defines what should happen to the player when the player
+		  interacts with an object with the script.
+		  <br> This snippet is a part of a longer piece of code, but this small piece of code detects whether or not the
+		  player has successfully returned a package.
+		  <br>
+		  <br>
+		  If the tag of the object is "Customer" and the player has a package while driving over the delivery zone, <br> the
+		  total delivered amount will update, the car will change colors, and the boolean "hasPackage" will become false,
+		  <br> meaning the player can now retrieve another package.
+		  <br>
+		  <br>
+		</p>
+		<br>
+		<!-- Code Snippet From Delivery Driver Script -->
+		<div class="center" id="code1">
+		  <pre>
+			if (other.tag == "Customer" && hasPackage == true) {
+		  totalDelivered++;
+			Debug.Log($"You delivered: " + totalDelivered + " packages.");
+			  packageObtained.text = $"Packages Delivered: " + totalDelivered;
+			   spriteRenderer.color = noPackageColor;
+			   hasPackage = false; }
+			</pre>
+		</div>
+	</div>
     <br>
 
 
